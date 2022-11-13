@@ -1,0 +1,392 @@
+﻿<?
+header('Content-Type: text/html; charset=utf-8');
+$host = $_SERVER['HTTP_HOST'];
+setlocale(LC_TIME, "pl_PL.utf8");
+date_default_timezone_set('Europe/Warsaw');
+
+$startdir = '.';
+$showthumbnails = false; 
+$showdirs = true;
+$forces = false;
+$hide = array(
+				'dlf',
+				'public_html',				
+				'index.html',
+				'Thumbs',
+				'.htaccess',
+				'.htpasswd'
+			);
+$displayindex = false;
+$allowuploads = false;
+$overwrite = false;
+
+$indexfiles = array (
+				'index.html',
+				'index.htm',
+				'default.htm',
+				'default.html'
+			);
+?>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl"><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="icon" href="Images/logom.jpg" type="image/x-icon">
+<link rel="shortcut icon" type="image/x-icon" href="Images/logom.jpg">
+<link type="image/x-icon" href="Images/logom.jpg">
+<link href="Images/logom.jpg" rel="apple-touch-icon">
+<link href="Images/logom.jpg" rel="apple-touch-icon" sizes="76x76">
+<link href="Images/logom.jpg" rel="apple-touch-icon" sizes="120x120">
+<link href="Images/logom.jpg" rel="apple-touch-icon" sizes="152x152">
+<meta name="description" content="Ty Pytasz My Odpowiadamy ! Calkowicie Darmowy Serwis z Poradami Komputerowymi.">
+<meta name="keywords" content="computer,help,page,chp,computerhelpage,pomoc,komputerowa,komputer,informatyk,informatyka,porady,poradniki,ciekawostki,toturiale,faq,pomoc techniczna,404,error,internet,net,rikey,rikeypl,strona,zaawansowany,serwis,java,android,chp,wiki,tut,toturial,zapytaj,jak,dlaczego,po,co,?,system,windows,10,7,xp,vista,8,8.1,normal,optymalizacja,narzedzia,przydatne,ipomoc">
+<meta name="author" content="RikeyPL">
+<meta name="robots" content="default,index,follow,Witamy">
+
+<script type="text/javascript">
+    (function () {
+        detectPortrait();
+        $(window).resize(function() {
+            detectPortrait("#mainView");
+        });
+
+
+        function detectPortrait(mainDiv) {
+            if (screen.width < screen.height) {
+                $(mainDiv).addClass("portrait_mode");
+            }
+            else {
+                $(mainDiv).removeClass("portrait_mode");
+            }
+        }	
+    })();
+</script>
+<style type="text/css">
+    .portrait_mode {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+</style>
+
+    <link href="CSS/zeruj.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+		<title>iPomoc - Przydatne Programy</title>
+		<body>
+
+                    <table height="102" id="Tutaj Menu">
+                        </table>
+<div id="gora"></div>
+<div id="logo"><a href="Index.html"><img src="Images/head.png"></a></div>	
+<div id="container">
+		<!-- Header -->
+			<div id="header_container">
+				<div class="header"><h1 id="header"><span>iPomoc</span></h1></div>
+			</div>
+			<div id="nav_container">
+			<h2 id="nav_heading"><span></span></h2>
+				<ul id="nav">
+		<!-- Menu -->
+<li class="nav_element checked_menu" id="nav_Witamy">
+<a href="Index.html" class="menu"><b>Witamy</b></a></li>
+<li class="nav_element" id="nav_Forum">
+<a href="#" class="menu"><b>Poradniki</b></a></li>
+<li class="nav_element" id="nav_Przydatne">
+<a href="Przydatne.html" class="menu"><b>Przydatne</b></a></li>
+<li class="nav_element" id="nav_Pytania">
+<a href="Pytania.html" class="menu"><b>Pytania</b></a></li>
+				</ul>
+			</div>
+			
+		<!-- Zawartosc Strony Poczatek-->
+
+			<div id="content_container">
+				<div id="pre_content"></div>
+				<div id="content">
+					<h2 id="title"><span>Przydatne Programy</span></h2>
+					
+					<center>
+					<strong>
+					<span style="text-align: justify;"><span style="font-family: Arial;"><span style="color: grey"><span style="font-size: 2em;">
+					Przydatne programy, które mogą Ci się przydać:
+					</span>
+					</span>
+					</span>
+					</span>
+					</strong>
+					</center>
+					<br/>
+					<br/>
+					
+<center>
+<table class="tabprog" align="center">
+	<tr>
+		<td style="text-align:center;" rowspan="4">
+		</td>
+		<th style="text-align:left;"><strong>CCleaner</strong></th>
+		<td style="text-align:right;">Wersja 5.16</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Służy do oczyszczana systemu Windows ze zbędnych śmieci. Usuwając zbędne
+		<br>
+		pliki i inne niepotrzebne elementy, system będzie stabilniejszy i wydajniejszy.
+		<br/>
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:right;"><strong><font size="5px;"><a href="http://download.piriform.com/ccsetup516.exe" target="_blank"><button>Pobierz</button><a></font></td>
+	</tr>
+		<tr>
+		<td colspan="3" style="text-align:right;"><hr style="background-color: rgb(232, 232, 232); border: 0px; height: 4px; margin-bottom: 1.625em; color: rgb(55, 55, 55); font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24.375px; text-align: start;"/></td>
+	</tr>
+	
+		<tr>
+		<td style="text-align:center;" rowspan="4">
+		</td>
+		<th style="text-align:left;"><strong>AdwCleaner</strong></th>
+		<td style="text-align:right;">Wersja 5.201</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Jest to narzędzie do wykrywania i usuwania komponentów typu adware i
+		<br>
+		innych szkodliwych aplikacji. Usuwa Toolbary, a także niepożądane oprogramowania.
+		<br/>
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:right;"><strong><font size="5px;"><font size="5px;"><a href="http://adwcleaner.pl/wp-content/uploads/program/adwcleaner.pl%205.201.exe" target="_blank" ><button>Pobierz</button></a></font></td>
+	</tr>
+		<tr>
+		<td colspan="3" style="text-align:right;"><hr style="background-color: rgb(232, 232, 232); border: 0px; height: 4px; margin-bottom: 1.625em; color: rgb(55, 55, 55); font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24.375px; text-align: start;"/></td>
+	</tr>
+	
+		<tr>
+		<td style="text-align:center;" rowspan="4">
+		</td>
+		<th style="text-align:left;"><strong>Rufus</strong></th>
+		<td style="text-align:right;">Wersja 2.8</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Program do tworzenia bootowalnych nośników USB z obrazów ISO. Korzystając z
+		<br>
+		tego oprogramowania możemy stworzyć samouruchamiający pendrive USB.
+		<br/>
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:right;"><strong><font size="5px;"><a href="https://rufus.akeo.ie/downloads/rufus-2.8.exe" target="_blank" ><button>Pobierz</button></a></font></td>
+	</tr>
+		<tr>
+		<td colspan="3" style="text-align:right;"><hr style="background-color: rgb(232, 232, 232); border: 0px; height: 4px; margin-bottom: 1.625em; color: rgb(55, 55, 55); font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24.375px; text-align: start;"/></td>
+	</tr>
+	
+		<tr>
+		<td style="text-align:center;" rowspan="4">
+		</td>
+		<th style="text-align:left;"><strong>EasyBCD</strong></th>
+		<td style="text-align:right;">Wersja 2.3.0.207</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Narzędzie do tworzenia oraz zarządzania Boot Configuration Data (BCD) - programem
+		<br>
+		rozruchowym systemu Windows. Aplikacja pozwala między innymi na ustawienie
+		<br/>
+		domyślnie uruchamianego systemu, zmianą czasu, oraz dodanie nowych systemów.
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:right;"><strong><font size="5px;"><a href="http://www.programosy.pl/download/pobierz,easybcd,2.html" target="_blank" ><button>Pobierz</button></a></font></td>
+	</tr>
+		<tr>
+		<td colspan="3" style="text-align:right;"><hr style="background-color: rgb(232, 232, 232); border: 0px; height: 4px; margin-bottom: 1.625em; color: rgb(55, 55, 55); font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24.375px; text-align: start;"/></td>
+	</tr>
+	
+		<tr>
+		<td style="text-align:center;" rowspan="4">
+		</td>
+		<th style="text-align:left;"><strong>CPU-Z</strong></th>
+		<td style="text-align:right;">Wersja 1.76</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Program dostarczający wszystkie niezbędne informacje odnośnie zamontowanego
+		<br>
+		w komputerze procesora ale również informacji o Pamięci RAM, karcie graficznej i
+		<br/>
+		płycie głównej.
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:right;"><strong><font size="5px;"><a href="http://download.cpuid.com/cpu-z/cpu-z_1.76-en.exe" target="_blank" ><button>Pobierz</button></a></font></td>
+	</tr>
+		<tr>
+		<td colspan="3" style="text-align:right;"><hr style="background-color: rgb(232, 232, 232); border: 0px; height: 4px; margin-bottom: 1.625em; color: rgb(55, 55, 55); font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24.375px; text-align: start;"/></td>
+	</tr>
+	
+		<tr>
+		<td style="text-align:center;" rowspan="4">
+		</td>
+		<th style="text-align:left;"><strong>Recuva</strong></th>
+		<td style="text-align:right;">Wersja 1.52.1086</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Oprogramowanie przeznaczone do odzyskiwania utraconych danych z dysku.
+		<br>
+		Dane można odzyskać z odtwarzaczy MP3, kart pamięci lub z opróżnionego kosza.
+		<br/>
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:right;"><strong><font size="5px;"><a href="http://download.piriform.com/rcsetup152.exe" target="_blank" ><button>Pobierz</button></a></font></td>
+	</tr>
+		<tr>
+		<td colspan="3" style="text-align:right;"><hr style="background-color: rgb(232, 232, 232); border: 0px; height: 4px; margin-bottom: 1.625em; color: rgb(55, 55, 55); font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24.375px; text-align: start;"/></td>
+	</tr>
+	
+			<tr>
+		<td style="text-align:center;" rowspan="4">
+		</td>
+		<th style="text-align:left;"><strong>WinKeyFinder</strong></th>
+		<td style="text-align:right;">Wersja 1.75</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Program pobierający klucze i numery seryjne z programów z rejestru Windows.
+		<br>
+		Za pomocą niego możemy odzyskać klucz produktu programu jak i systemu.
+		<br/>
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:right;"><strong><font size="5px;"><a href="http://download.instalki.org/programy/Windows/Narzedzia/narzedzia_systemowe/WinKeyFinder175_www.INSTALKI.pl.zip" target="_blank" ><button>Pobierz</button></a></font></td>
+	</tr>
+		<tr>
+		<td colspan="3" style="text-align:right;"><hr style="background-color: rgb(232, 232, 232); border: 0px; height: 4px; margin-bottom: 1.625em; color: rgb(55, 55, 55); font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24.375px; text-align: start;"/></td>
+	</tr>
+	
+			<tr>
+		<td style="text-align:center;" rowspan="4">
+		</td>
+		<th style="text-align:left;"><strong>Revo Unistaller</strong></th>
+		<td style="text-align:right;">Wersja 1.95</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Program przeznaczony do usuwania zbędnych aplikacji w systemie Windows.
+		<br>
+		Wyróżnia go dokładność i obecność dodatkowych opcji pomagających w deinstalacji.
+		<br/>
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:right;"><strong><font size="5px;"><a href="http://www.revouninstaller.com/download/revosetup.exe" target="_blank" ><button>Pobierz</button></a></font></td>
+	</tr>
+		<tr>
+		<td colspan="3" style="text-align:right;"><hr style="background-color: rgb(232, 232, 232); border: 0px; height: 4px; margin-bottom: 1.625em; color: rgb(55, 55, 55); font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24.375px; text-align: start;"/></td>
+	</tr>
+	
+			<tr>
+		<td style="text-align:center;" rowspan="4">
+		</td>
+		<th style="text-align:left;"><strong>ImgBurn</strong></th>
+		<td style="text-align:right;">Wersja 2.5.8.0</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Program posiadający wiele zaawansowanych funkcji przy nagrywaniu obrazów płyt.
+		<br>
+		Obsługuje większość dostępnych nagrywarek oraz dużą ilość formatów plików.
+		<br/>
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:right;"><strong><font size="5px;"><a href="http://download.imgburn.com/SetupImgBurn_2.5.8.0.exe" target="_blank" ><button>Pobierz</button></a></font></td>
+	</tr>
+		<tr>
+		<td colspan="3" style="text-align:right;"><hr style="background-color: rgb(232, 232, 232); border: 0px; height: 4px; margin-bottom: 1.625em; color: rgb(55, 55, 55); font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24.375px; text-align: start;"/></td>
+	</tr>
+	
+			<tr>
+		<td style="text-align:center;" rowspan="4">
+		</td>
+		<th style="text-align:left;"><strong>Daemon Tools Lite</strong></th>
+		<td style="text-align:right;">Wersja 10.3.0</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Służy do tworzenia obrazów dysków i emulacji wirtualnych napędów CD, DVD i
+		<br>
+		Blue-ray. Wersja Lite jest bezpłatna i pozwala na utworzenie 4 wirtualnych napędów.
+		<br/>
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:right;"><strong><font size="5px;"><a href="http://download.instalki.org/programy/Windows/Narzedzia/emulatory_napedow/DTLiteInstaller_www.INSTALKI.pl.exe" target="_blank" ><button>Pobierz</button></a></font></td>
+	</tr>
+		<tr>
+		<td colspan="3" style="text-align:right;"><hr style="background-color: rgb(232, 232, 232); border: 0px; height: 4px; margin-bottom: 1.625em; color: rgb(55, 55, 55); font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24.375px; text-align: start;"/></td>
+	</tr>
+	
+			<tr>
+		<td style="text-align:center;" rowspan="4">
+		</td>
+		<th style="text-align:left;"><strong>WinRAR</strong></th>
+		<td style="text-align:right;">Wersja 5.31</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Program służący do kompresji plików wspierając archiwa takie jak: RAR,ZIP,
+		<br>
+		i wiele więcej. Z możliwością szyfrowania i oczywiście rozpakowywania archiwów.
+		<br/>
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:right;"><strong><font size="5px;"><a href="http://win-rar.com/fileadmin/winrar-versions/partners/ik/wrar531pl.exe" target="_blank" ><button>Pobierz</button></a></font></td>
+	</tr>
+		<tr>
+		<td colspan="3" style="text-align:right;"><hr style="background-color: rgb(232, 232, 232); border: 0px; height: 4px; margin-bottom: 1.625em; color: rgb(55, 55, 55); font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24.375px; text-align: start;"/></td>
+	</tr>
+</table>
+<br/>
+<a href="https://www.facebook.com/ipomoc.info" target="_blank"><button>Zgłoś niedziałający link do programu.</button></a>
+</center>
+
+		<!-- Zawartosc Strony Koniec-->
+</div>		
+			</div>
+		</div>
+		<!-- Stopka -->
+		<div id="footer">
+		<center>
+<div id="box1">
+Copyright &copy; <?php echo date("Y") ?> iPomoc
+<br />
+Wszelkie prawa zastrzeżone.
+</div>
+</div>
+<br/>
+</center></body></html>
