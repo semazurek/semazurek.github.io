@@ -79,4 +79,5 @@ function GetEMAIL()
     {
 	    navigator.clipboard.writeText('sebastianmazurek@pm.me');
 		document.getElementById('label-email').innerHTML = 'sebastianmazurek@pm.me';
+	    	document.getElementById('button-email').innerHTML = "E-mail Copied";
     }
