@@ -74,13 +74,6 @@ ScrollReveal().reveal(".fa", {
   interval: 100,
 });
 
-/*==== Get E-Mail Copy ====*/
-function GetEMAIL()
-    {
-	    navigator.clipboard.writeText('sebastianmazurek@pm.me');
-		document.getElementById('label-email').innerHTML = 'sebastianmazurek@pm.me';
-	    	document.getElementById('button-email').innerHTML = "E-mail Copied";
-    }
 var typed = new Typed('#typed', {
     strings: ['Hello there!', 'I am CCNA, C#, PowerShell and Unix enthusiast. ', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret.', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret. <br />After work I enjoy doing my own IT projects.'],
     typeSpeed: 35,
@@ -94,3 +87,11 @@ var typed = new Typed('#typed', {
     // cursorChar: '...'
 
 });
+
+/*==== Get E-Mail Copy ====*/
+function GetEMAIL()
+    {
+	    navigator.clipboard.writeText('sebastianmazurek@pm.me');
+		document.getElementById('label-email').innerHTML = 'sebastianmazurek@pm.me';
+	    	document.getElementById('button-email').innerHTML = "E-mail Copied";
+    }
