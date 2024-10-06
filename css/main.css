@@ -16,6 +16,10 @@
   inherits: false;
 }
 
+.img-fluid {
+    position: relative;
+}
+
 .img-fluid:after, .img-fluid::before{
   content: '';
   position: absolute;
