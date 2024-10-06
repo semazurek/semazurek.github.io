@@ -82,7 +82,7 @@ function GetEMAIL()
 	    	document.getElementById('button-email').innerHTML = "E-mail Copied";
     }
 var typed = new Typed('#typed', {
-    strings: ['I am Network Administrator and CCNA, C#, PowerShell enthusiast. ', 'I hold a security clearance for confidential and secret (National and NATO).', 'Computer repair and optimization is my passion. After work I enjoy doing my own IT projects.'],
+    strings: ['Hello there!', 'I am CCNA, C#, PowerShell enthusiast. ', 'I hold a security clearance for confidential and secret.', 'After work I enjoy doing my own IT projects.'],
     typeSpeed: 35,
     startDelay: 500,
     backDelay: 1000,
