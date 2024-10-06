@@ -84,7 +84,7 @@ function GetEMAIL()
 var typed = new Typed('#typed', {
     strings: ['Hello there!', 'I am CCNA, C#, PowerShell and Unix enthusiast. ', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret.', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret. <br />After work I enjoy doing my own IT projects.'],
     typeSpeed: 35,
-    startDelay: 2000,
+    startDelay: 4500,
     //backDelay: 1000,
     backSpeed: 35,
     // fadeOut: true,
