@@ -253,7 +253,7 @@
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
           <p class="contact-wrapper__text" id="label-email">s********************k@p*****e</p>
-          <a href="#contact" id="button-email" onclick="GetEMAIL();" class="cta-btn cta-btn--resume">Get My E-mail</a>
+          <a href="#contact" id="button-email" onclick="GetEMAIL();navigator.clipboard.writeText('sebastianmazurek@pm.me');document.getElementById('button-email').innerHTML = "E-mail Copied";" class="cta-btn cta-btn--resume">Get My E-mail</a>
         </div>
       </div>
     </section>
