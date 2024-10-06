@@ -4,6 +4,7 @@
     padding: 15px 15px 100px;
     border-radius: 8px;
     border-top: 20px solid #e8e8e8;
+    backdrop-filter: blur(10px);
 }
 
 .text__editor .text__body {font-size: 1.7rem; color: #fff;}
