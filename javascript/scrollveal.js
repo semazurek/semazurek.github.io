@@ -74,11 +74,26 @@ ScrollReveal().reveal(".fa", {
   interval: 100,
 });
 
+var booting = new Typed('#booting', {
+    strings: ['BOOTING.', 'BOOTING..', 'BOOTING...', 'BOOTING.', 'BOOTING..', 'BOOTING...', 'BOOTING.', 'BOOTING..', 'BOOTING...'],
+    //typeSpeed: 0,
+    //startDelay: 500,
+    //backDelay: 1000,
+    //backSpeed: 35,
+    // fadeOut: true,
+    loop: true,
+    //loopCount: 2,
+     showCursor: false
+    // cursorChar: '...'
+
+});
+
+function WriteConsole(){
 var typed = new Typed('#typed', {
     strings: ['Hello there!', 'My work is top secret. <br />Even I don\'t know what I\'m doing there ☺', 'I am CCNA, C#, PowerShell and Unix enthusiast. ', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret.', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret. <br />After work I enjoy doing my own IT projects.'],
     typeSpeed: 35,
     startDelay: 4500,
-    //backDelay: 1000,
+    backDelay: 1000,
     backSpeed: 35,
     // fadeOut: true,
     //loop: true,
@@ -88,6 +103,8 @@ var typed = new Typed('#typed', {
 
 });
 
+}
+
 /*==== Get E-Mail Copy ====*/
 function GetEMAIL()
     {
@@ -95,3 +112,12 @@ function GetEMAIL()
 		document.getElementById('label-email').innerHTML = 'sebastianmazurek@pm.me';
 	    	document.getElementById('button-email').innerHTML = "E-mail Copied";
     }
+
+var loader = document.getElementById("pre-loader");
+
+	window.addEventListener("load", function(){
+	setTimeout(function(){
+		loader.style.display = "none";
+		WriteConsole();
+	}, 4000);
+});
