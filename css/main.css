@@ -5,8 +5,19 @@
     border-radius: 8px;
     border-top: 20px solid #e8e8e8;
     backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
 }
 
 .text__editor .text__body {font-size: 1.7rem; color: #fff;}
 
 .typed-cursor {color: #fff;}
+
+.shadowbx {
+   backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
