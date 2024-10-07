@@ -75,7 +75,7 @@ ScrollReveal().reveal(".fa", {
 });
 
 var typed = new Typed('#typed', {
-    strings: ['Hello there!', 'How are you?', 'My work is top secret. <br />Even I dont know what I`m doing here 🤣', 'I am CCNA, C#, PowerShell and Unix enthusiast. ', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret.', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret. <br />After work I enjoy doing my own IT projects.'],
+    strings: ['Hello there!', 'My work is top secret. <br />Even I don\'t know what I\'m doing here 🤣', 'I am CCNA, C#, PowerShell and Unix enthusiast. ', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret.', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret. <br />After work I enjoy doing my own IT projects.'],
     typeSpeed: 35,
     startDelay: 4500,
     //backDelay: 1000,
