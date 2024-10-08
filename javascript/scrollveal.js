@@ -74,21 +74,8 @@ ScrollReveal().reveal(".fa", {
   interval: 100,
 });
 
-var booting = new Typed('#booting', {
-    strings: ['BOOTING.', 'BOOTING..', 'BOOTING...', 'BOOTING.', 'BOOTING..', 'BOOTING...', 'BOOTING.', 'BOOTING..', 'BOOTING...'],
-    //typeSpeed: 0,
-    //startDelay: 500,
-    //backDelay: 1000,
-    //backSpeed: 35,
-    // fadeOut: true,
-    loop: true,
-    //loopCount: 2,
-     showCursor: false
-    // cursorChar: '...'
-
-});
-
-function WriteConsole(){
+function WriteConsole()
+{
 var typed = new Typed('#typed', {
     strings: ['Hello there!', 'I am CCNA, C#, PowerShell and Unix enthusiast.<br />I hold a security clearance for confidential and secret.<br />After work I enjoy doing my own IT projects.'],
     typeSpeed: 35,
@@ -102,7 +89,6 @@ var typed = new Typed('#typed', {
     // cursorChar: '...'
 
 });
-
 }
 
 /*==== Get E-Mail Copy ====*/
@@ -113,11 +99,27 @@ function GetEMAIL()
 	    	document.getElementById('button-email').innerHTML = "E-mail Copied";
     }
 
-var loader = document.getElementById("pre-loader");
+gsap.fromTo(
+  ".loading-page",
+  { opacity: 1 },
+  {
+    opacity: 0,
+    display: "none",
+    duration: 1.5,
+    delay: 3.5,
+  }
+);
 
-	window.addEventListener("load", function(){
-	setTimeout(function(){
-		loader.style.display = "none";
-		WriteConsole();
-	}, 4000);
-});
+gsap.fromTo(
+  ".logo-name",
+  {
+    y: 50,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    delay: 0.5,
+  }
+);
