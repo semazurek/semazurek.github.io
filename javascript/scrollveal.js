@@ -94,7 +94,7 @@ var typed = new Typed('#typed', {
     typeSpeed: 35,
     startDelay: 4500,
     backDelay: 2000,
-    backSpeed: 0,
+    backSpeed: 20,
     // fadeOut: true,
     loop: true,
     loopCount: 1,
