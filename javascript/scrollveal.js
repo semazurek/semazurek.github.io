@@ -90,7 +90,7 @@ var booting = new Typed('#booting', {
 
 function WriteConsole(){
 var typed = new Typed('#typed', {
-    strings: ['Hello there!', 'My work is top secret. <br />Even I don\'t know what I\'m doing there ☺', 'I am CCNA, C#, PowerShell and Unix enthusiast. ', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret.', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret. <br />After work I enjoy doing my own IT projects.'],
+    strings: ['Hello there!', 'My work is top secret. <br />Even I don\'t know what I\'m doing there ¯\_(ツ)_/¯', 'I am CCNA, C#, PowerShell and Unix enthusiast. ', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret.', 'I am CCNA, C#, PowerShell and Unix enthusiast. <br />I hold a security clearance for confidential and secret. <br />After work I enjoy doing my own IT projects.'],
     typeSpeed: 35,
     startDelay: 4500,
     backDelay: 2000,
