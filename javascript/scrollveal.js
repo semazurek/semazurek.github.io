@@ -9,18 +9,18 @@ const defaultProps = {
 // Hero Section
 ScrollReveal().reveal(".hero-title", {
   ...defaultProps,
-  delay: 500,
+  delay: 4200,
   origin: window.innerWidth > 768 ? "left" : "bottom",
 });
 ScrollReveal().reveal(".name", {
   ...defaultProps,
   distance: "0px",
-  delay: 700,
+  delay: 4300,
   scale: 0,
 });
 ScrollReveal().reveal(".hero-cta", {
   ...defaultProps,
-  delay: 1200,
+  delay: 4500,
   origin: window.innerWidth > 768 ? "left" : "bottom",
 });
 ScrollReveal().reveal(".scroll-down-link", {
@@ -96,8 +96,8 @@ var typed = new Typed('#typed', {
     backDelay: 1000,
     backSpeed: 35,
     // fadeOut: true,
-    //loop: true,
-    //loopCount: 2,
+    loop: true,
+    loopCount: 1,
     // showCursor: false
     // cursorChar: '...'
 
