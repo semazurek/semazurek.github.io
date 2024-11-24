@@ -44,14 +44,14 @@
 	
     <!--Projects Section-->
 
-                 <img
+                
+                  <img
                     src="./assets/szlabany-2.png"
-                    class="shadowbx"
-					style="width:100%;height:100%;margin:0;transform: rotate(90deg);padding:0;object-fit: cover;"
+                    class="img-fluid shadowbx thumbnail"
+                    alt="Project Image"
+					style="width:100%;height:100%;object-position:center;object-fit:cover;"
 					usemap="#workmap"
                   />
-				  
-				  
 				  
 				  <map id="workmap" name="workmap">
 					<area shape="circle" coords="351,351,25" alt="Szlaban 4" href="tel:786853007">
@@ -59,30 +59,43 @@
 					<area shape="circle" coords="451,304,25" alt="Szlaban 2" href="tel:786852981">
 					<area shape="circle" coords="588,232,25" alt="Szlaban 1" href="tel:786852966">
 				</map>
+				<br />
+				<br />
+				<br />
+                <p><b>Wybierz szlaban do otwarcia na mapie lub poniżej.</b></p>
+				<br />
+				<br />
+				
+				<p><a class="cta-btn text-color-main shadowbx szlab1" href="tel:786852966" style="width:50%;margin:5px;padding:2%">1</a></p>
+				
+				<p><a class="cta-btn text-color-main shadowbx szlab2" href="tel:786852981" style="width:50%;margin:5px;padding:2%">2</a></p>
+
+				<p><a class="cta-btn text-color-main shadowbx szlab3" href="tel:786852997" style="width:50%;margin:5px;padding:2%">3</a></p>
+
+				<p><a class="cta-btn text-color-main shadowbx szlab4" href="tel:786853007" style="width:50%;margin:5px;padding:2%">4</a></p>
+				
+				<br/>
+				<br/>
+				<br/>
 				
 				<style>
 					.szlab1:hover:before {
-					content: '786852966';
+					content: ' tel. 786852966 - ';
 					}
 					.szlab2:hover:before {
-					content: '786852981';
+					content: ' tel. 786852981 - ';
 					}
 					.szlab3:hover:before {
-					content: '786852997';
+					content: ' tel. 786852997 - ';
 					}
 					.szlab4:hover:before {
-					content: '786853007';
+					content: ' tel. 786853007 - ';
 					}
 				</style>
 
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
 	<script>
-	
-	
-	
-	<!-- majonez -->
-	
 	var loader = document.getElementById("pageload");
 	window.addEventListener("load", function(){
 	setTimeout(function(){
