@@ -43,79 +43,60 @@
 
 	
     <!--Projects Section-->
-
-                <div>
+	<section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+		</br>
+		</br>
+          <h2 class="section-title dark-blue-text" style="visibility: visible;">Szlabany</h2>
+				<a href="tel:786852966">
                   <img
-                    src="./assets/szlabany-2.png"
+                    src="./assets/1.jpg"
                     class="img-fluid shadowbx thumbnail"
                     alt="Project Image"
-					style="width:100%;height:100%;object-position:center;object-fit:fill;transform: scale(1.5);"
-					usemap="#workmap"
+					style="width:45%;object-position:center;object-fit:fill;display: inline;"
                   />
+				  </a>
+				  <a href="tel:786852981">
+                  <img
+                    src="./assets/2.jpg"
+                    class="img-fluid shadowbx thumbnail"
+                    alt="Project Image"
+					style="width:45%;height:45%;object-position:center;object-fit:fill;display: inline;"
+                  />
+				  </a>
+
+				  <a href="tel:786852997">
+                  <img
+                    src="./assets/3.jpg"
+                    class="img-fluid shadowbx thumbnail"
+                    alt="Project Image"
+					style="width:45%;object-position:center;object-fit:fill;display: inline;"
+                  />
+				  </a>
+
+				  <a href="tel:786853007">
+                  <img
+                    src="./assets/4.jpg"
+                    class="img-fluid shadowbx thumbnail"
+                    alt="Project Image"
+					style="width:45%;object-position:center;object-fit:fill;display: inline;"
+                  />
+				  </a>
+				  </br>
+				  <a href="#">
+                  <img
+                    src="./assets/5.jpg"
+                    class="img-fluid shadowbx thumbnail"
+                    alt="Project Image"
+					style="width:45%;object-position:center;object-fit:fill;display: inline;"
+                  />
+				  </a>
+
 				  </div>
-				  
-				  <map id="workmap" name="workmap">
-					<area shape="circle" coords="351,351,25" alt="Szlaban 4" href="tel:786853007">
-					<area shape="circle" coords="402,327,25" alt="Szlaban 3" href="tel:786852997">
-					<area shape="circle" coords="451,304,25" alt="Szlaban 2" href="tel:786852981">
-					<area shape="circle" coords="588,232,25" alt="Szlaban 1" href="tel:786852966">
-				</map>
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<p><b>Wybierz szlaban do otwarcia.</b></p>
-				<br />
-				<br />
-				
-				<button onclick="window.location.href='tel:786852966';" class="cta-btn text-color-main shadowbx" style="display: inline;border: none;width:80px;border-radius: 8px;"><a class="szlab1" href="tel:786852966" style="width:50%;margin:5px;padding:2%">1</a></button>
-				
-				<button onclick="window.location.href='tel:786852981';" class="cta-btn text-color-main shadowbx" style="display: inline;border: none;width:80px;border-radius: 8px;""><a class="szlab2" href="tel:786852981" style="width:50%;margin:5px;padding:2%">2</a></button>
-
-				<button onclick="window.location.href='tel:786852997';" class="cta-btn text-color-main shadowbx" style="display: inline;border: none;width:80px;border-radius: 8px;""><a class="szlab3" href="tel:786852997" style="width:50%;margin:5px;padding:2%">3</a></button>
-
-				<button onclick="window.location.href='tel:786853007';" class="cta-btn text-color-main shadowbx" style="display: inline;border: none;width:80px;border-radius: 8px;""><a class="szlab4" href="tel:786853007" style="width:50%;margin:5px;padding:2%">4</a></button>
-				<br/>
-				<br/>
-				<br/>
-
+				  </div>
+				  </section>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
-	<script>
-	var loader = document.getElementById("pageload");
-	window.addEventListener("load", function(){
-	setTimeout(function(){
-		loader.style.display = "none";
-	}, 1500);
-});
-
-function mapResizer(maps) {
-    if (!maps) {maps = document.getElementsByTagName('map');}
-    for (const map of maps) {
-        map.img = document.querySelectorAll(`[usemap="#${map.name}"]`)[0];
-        map.areas = map.getElementsByTagName('area');
-        for (const area of map.areas) {
-            area.coordArr = area.coords.split(',');
-        }
-    }
-    function resizeMaps() {
-        for (const map of maps) {
-            const scale = map.img.offsetWidth / (map.img.naturalWidth || map.img.width);
-            for (const area of map.areas) {
-                area.coords = area.coordArr.map(coord => Math.round(coord * scale)).join(',');
-            }
-        }
-    }
-    window.addEventListener('resize', () => resizeMaps());
-    resizeMaps();
-}
-if (document.readyState == 'complete') {
-    mapResizer();
-} else {
-    window.addEventListener('load', () => mapResizer());
-}
-	</script>
   </body>
 </html>
