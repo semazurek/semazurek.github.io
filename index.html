@@ -66,7 +66,7 @@
 
     <!-- About Section -->
     <section id="about">
-      <div class="container">
+    <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="row about-wrapper">
           <div class="about-wrapper__image" style="min-height: 125px;max-heigth:350px">
@@ -78,20 +78,73 @@
           </div>
           <div class="about-wrapper__info">
             <p class="about-wrapper__info-text">
-		    	    <div class="text__editor">
+		    <div class="text__editor">
+				
+			
             <div class="text__body">
+			<i class="fa-solid fa-terminal text__editor-titlebar"></i>  
+
                 $&nbsp;<span id="typed"></span>
             </div>
             </div>
             </p>
+			</br>
+			<center>
             <span class="about-wrapper__cta">
-              <a href="./assets/Resume-Sebastian-Mazurek.pdf" target="_blank" class="cta-btn cta-btn--resume">View Resume</a>
+              <a href="./assets/Resume-Sebastian-Mazurek.pdf" target="_blank" class="cta-btn cta-btn--resume"><i class="fa-solid fa-file"></i>  Resume.pdf</a>
+              <a href="#about" style="margin-left:5px" class="cta-btn cta-btn--resume" id="myBtn"><i class="fa-solid fa-gear"></i>  Skills.exe</a>
             </span>
-          </div>
+			</center>
+    </div>
         </div>
-      </div>
+        </div>
     </section>
     <!-- /END About Section -->
+
+		<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+  <span class="modal-titlebar"><i class="fa-solid fa-gear"></i>  Skills ver 1.0</span>
+    <span class="close">&times;</span>
+	<div class="skills-container">
+        <div class="skill">
+            <div class="skill-icon"><img src="./assets/ad.png" alt="AD/SCCM"></div>
+            <div class="skill-title">AD & SCCM</div>
+        </div>
+        <div class="skill">
+            <div class="skill-icon"><img src="./assets/win.png" alt="Windows"></div>
+            <div class="skill-title">Windows</div>
+        </div>
+        <div class="skill">
+            <div class="skill-icon"><img src="./assets/linux.png" alt="Linux"></div>
+            <div class="skill-title">Linux</div>
+        </div>
+        <div class="skill">
+            <div class="skill-icon"><img src="./assets/cisco.png" alt="Cisco"></div>
+            <div class="skill-title">Cisco</div>
+        </div>
+        <div class="skill">
+            <div class="skill-icon"><img src="./assets/wrt.png" alt="OpenWRT"></div>
+            <div class="skill-title">OpenWRT</div>
+        </div>
+        <div class="skill">
+            <div class="skill-icon"><img src="./assets/powershell.png" alt="PowerShell"></div>
+            <div class="skill-title">PowerShell</div>
+        </div>
+		<div class="skill">
+            <div class="skill-icon"><img src="./assets/c-sharp.png" alt="C#"></div>
+            <div class="skill-title">C#</div>
+        </div>
+        <div class="skill">
+            <div class="skill-icon"><img src="./assets/python.png" alt="Python"></div>
+            <div class="skill-title">Python</div>
+        </div>
+    </div>
+	</br>
+  </div>
+</div>
 
     <!--Projects Section-->
     <section id="projects">
@@ -328,5 +381,32 @@
 	}, 3800);
 });
 	</script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
   </body>
 </html>
