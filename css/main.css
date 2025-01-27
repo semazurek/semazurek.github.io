@@ -22,9 +22,10 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+	float: left;
     unicode-bidi: isolate;
 	color: #000000;
-	position:absolute;
+	position: absolute;
 	margin-top: -36px;
 	margin-left: -5px;
 
